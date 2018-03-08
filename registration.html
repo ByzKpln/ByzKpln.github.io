@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+</head>
+<body>
+<table width="600">
+  <tr>
+    <th><h5><a href="index.html">Home</a></h5></th>
+    <th><h5><a href="localdishes.html">Local Dishes</a></h5></th>
+    <th><h5><a href="historicalplaces.html">Historical Places</a></h5></th>
+    <th><h5><a href="usefullinks.html">Useful Links</a></h5></th>
+    <th><h5><a href="aboutme.html">About Me</a></h5></th>
+    <th><h5><a href="contactme.html">Contact Me</a></h5></th>
+    <th><h3>Registration</h3></th>
+  </tr>
+</table>
+<hr/>
+<br/>
+<form action="submit.html" method="post" name="registration">
+Name : <input name="name" type="text" maxlength="33" />
+<br/>
+<br/>
+Surname : <input name="surname" type"text" maxlength="33"/>
+<br/>
+<br/>
+Date of Birth : <input name="dateofbirth" type="date" maxlength="33"/>
+<br/>
+<br/>
+E-mail : <input name="email" type="text" maxlength="33"/>
+<br/>
+<br/>
+Password : <input name="password" type="password" maxlength="33"/>
+<br/>
+<br/>
+Gender : <select name="gender">
+  <option value="1">Male</option>
+  <option value="2">Female</option>
+</select>
+<br/>
+<br/>
+Interests :
+<br/>
+  <label>
+    <input type="checkbox" name="interests" value="1" id="interests_0" />
+    Code</label>
+  <br />
+  <label>
+    <input type="checkbox" name="interests" value="2" id="interests_1" />
+    Swim</label>
+  <br />
+  <label>
+    <input type="checkbox" name="interests" value="3" id="interests_2" />
+    etc.</label>
+ <br/>
+ <br/>
+
+<input name="submit" type="submit" value="Submit" />
+
+<input name="reset" type="reset" value="Reset" /></form>
+
+</body>
+</html>
