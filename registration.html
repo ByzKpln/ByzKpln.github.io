@@ -18,8 +18,8 @@
 </table>
 <hr/>
 <br/>
-<form action="submit.html" method="get" name="registration">
-Name : <input name="name" type="text" maxlength="33" />
+<form action="submit.html" name="registration">
+Name* : <input name="name" type="text" maxlength="33" required/>
 <br/>
 <br/>
 Surname : <input name="surname" type"text" maxlength="33"/>
@@ -28,10 +28,10 @@ Surname : <input name="surname" type"text" maxlength="33"/>
 Date of Birth : <input name="dateofbirth" type="date" maxlength="33"/>
 <br/>
 <br/>
-E-mail : <input name="email" type="text" maxlength="33"/>
+E-mail* : <input name="email" type="email" maxlength="33" required/>
 <br/>
 <br/>
-Password : <input name="password" type="password" maxlength="33"/>
+Password* : <input name="password" type="password" maxlength="33" required/>
 <br/>
 <br/>
 Gender : <select name="gender">
@@ -48,11 +48,14 @@ Interests :
   <br />
   <label>
     <input type="checkbox" name="interests" value="2" id="interests_1" />
-    Swim</label>
+  Swim</label>
   <br />
   <label>
-    <input type="checkbox" name="interests" value="3" id="interests_2" />
-    etc.</label>
+    <input type="checkbox" name="interests" value="3" id="interests_2" /> Reading</label>
+   <br/>
+  <label>
+  	<input type="checkbox" name="interests" value="4" id="interests_3" />
+Watching Movie/Series </label>
  <br/>
  <br/>
 
