@@ -2,45 +2,63 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Registration</title>
 </head>
-<body>
-<table width="600">
-  <tr>
-    <th><h5><a href="index.html">Home</a></h5></th>
-    <th><h5><a href="localdishes.html">Local Dishes</a></h5></th>
-    <th><h5><a href="historicalplaces.html">Historical Places</a></h5></th>
-    <th><h5><a href="usefullinks.html">Useful Links</a></h5></th>
-    <th><h5><a href="aboutme.html">About Me</a></h5></th>
-    <th><h5><a href="contactme.html">Contact Me</a></h5></th>
-    <th><h3>Registration</h3></th>
-  </tr>
-</table>
-<hr/>
-<br/>
-<form action="submit.html" method="get" name="registration">
-Name* : <input name="name" type="text" maxlength="33" required/>
-<br/>
-<br/>
-Surname : <input name="surname" type"text" maxlength="33"/>
-<br/>
-<br/>
-Date of Birth : <input name="dateofbirth" type="date" maxlength="33"/>
-<br/>
-<br/>
-E-mail* : <input name="email" type="email" maxlength="33" required/>
-<br/>
-<br/>
-Password* : <input name="password" type="password" maxlength="33" required/>
-<br/>
-<br/>
-Gender : <select name="gender">
+<body><style>
+body{
+	background-image:url(img/Pink-Sakura-Flowers-Wallpaper-Pc.jpg);
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+</style>
+<div class="container-fluid">
+<nav class="navbar navbar-default ">
+  
+  <div class ="row">
+   <div class="col-lg-12">
+    <div class="navbar-header navbar-right">
+      <a class="navbar-brand" href="index.html">Brno~</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+<li><a href="localdishes.html">Local Dishes</a></li>
+<li><a href="historicalplaces.html">Historical Places</a></li>
+<li><a href="usefullinks.html">Useful Links</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+<li><a href="contactme.html">Contact Me</a></li>
+<li class="active"><a href="registration.html">Registration</a></li>
+</ul>
+</div>
+</div>
+</nav>
+  </div>
+ 
+ 
+ <div class="container-fluid">
+<div class="row">
+<form style="text-align:center;" action="submit.html" method="get" name="registration">
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);"> Name* : <input name="name" type="text" maxlength="33" required/></p>
+
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);" >Surname : <input name="surname" type"text" maxlength="33"/></p>
+
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);"> Date of Birth : <input name="dateofbirth" type="date" maxlength="33"/></p>
+
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">E-mail* : <input name="email" type="email" maxlength="33" required/></p>
+
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Password* : <input name="password" type="password" maxlength="33" required/></p>
+
+
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Gender : <select name="gender">
   <option value="1">Male</option>
   <option value="2">Female</option>
-</select>
-<br/>
-<br/>
-Interests :
+</select></p>
+
+<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Interests :
 <br/>
   <label>
     <input type="checkbox" name="interests" value="1" id="interests_0" />
@@ -57,11 +75,12 @@ Interests :
   	<input type="checkbox" name="interests" value="4" id="interests_3" />
 Watching Movie/Series </label>
  <br/>
- <br/>
 
-<input name="submit" type="submit" value="Submit" />
+ </p>
 
-<input name="reset" type="reset" value="Reset" /></form>
+<p class="col-lg-12" ><input name="submit" type="submit" value="Submit" />
+
+<input name="reset" type="reset" value="Reset" /></p></form>
 
 </body>
 </html>
