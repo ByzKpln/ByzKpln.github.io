@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>Registration</title>
+  <title>Registration</title>
 </head>
 <body><style>
 body{
 	background-image:url(img/Pink-Sakura-Flowers-Wallpaper-Pc.jpg);
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
 }
 </style>
 <div class="container-fluid">
-<nav class="navbar navbar-default ">
-  
-  <div class ="row">
-   <div class="col-lg-12">
-    <div class="navbar-header navbar-right">
-      <a class="navbar-brand" href="index.html">Brno~</a>
+  <nav class="navbar navbar-default">
+    
+    <div class ="row">
+     <div class="col-lg-12">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a data-toggle="tooltip" data-placement="top" title="Home" class="navbar-brand" href="index.html">Brno~</a>
+      </div>
+      <div class="collapse navbar-collapse"  id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="localdishes.html">Local Dishes</a></li>
+          <li><a href="historicalplaces.html">Historical Places</a></li>
+          <li><a href="usefullinks.html">Useful Links</a></li>
+          <li><a href="aboutme.html">About Me</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+          <li class="active"><a href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-<li><a href="localdishes.html">Local Dishes</a></li>
-<li><a href="historicalplaces.html">Historical Places</a></li>
-<li><a href="usefullinks.html">Useful Links</a></li>
-<li><a href="aboutme.html">About Me</a></li>
-<li><a href="contactme.html">Contact Me</a></li>
-<li class="active"><a href="registration.html">Registration</a></li>
-</ul>
-</div>
-</div>
-</nav>
   </div>
- 
- 
- <div class="container-fluid">
-<div class="row">
-<form style="text-align:center;" action="submit.html" method="get" name="registration">
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);"> Name* : <input name="name" type="text" maxlength="33" required/></p>
-
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);" >Surname : <input name="surname" type"text" maxlength="33"/></p>
-
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);"> Date of Birth : <input name="dateofbirth" type="date" maxlength="33"/></p>
-
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">E-mail* : <input name="email" type="email" maxlength="33" required/></p>
-
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Password* : <input name="password" type="password" maxlength="33" required/></p>
+</nav>
+</div>
 
 
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Gender : <select name="gender">
-  <option value="1">Male</option>
-  <option value="2">Female</option>
-</select></p>
+<div class="container-fluid">
+  <div class="row">
+    <form style="text-align:center;" action="submit.html" method="get" name="registration">
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);"> Name* : <input name="name" type="text" maxlength="33" required/></p>
 
-<p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Interests :
-<br/>
-  <label>
-    <input type="checkbox" name="interests" value="1" id="interests_0" />
-    Code</label>
-  <br />
-  <label>
-    <input type="checkbox" name="interests" value="2" id="interests_1" />
-  Swim</label>
-  <br />
-  <label>
-    <input type="checkbox" name="interests" value="3" id="interests_2" /> Reading</label>
-   <br/>
-  <label>
-  	<input type="checkbox" name="interests" value="4" id="interests_3" />
-Watching Movie/Series </label>
- <br/>
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);" >Surname : <input name="surname" type"text" maxlength="33"/></p>
 
- </p>
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);"> Date of Birth : <input name="dateofbirth" type="date" maxlength="33"/></p>
 
-<p class="col-lg-12" ><input name="submit" type="submit" value="Submit" />
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">E-mail* : <input name="email" type="email" maxlength="33" required/></p>
 
-<input name="reset" type="reset" value="Reset" /></p></form>
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Password* : <input name="password" type="password" maxlength="33" required/></p>
 
-</body>
-</html>
+
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Gender : <select name="gender">
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+      </select></p>
+
+      <p class="col-lg-12" style="background-color: rgba(255, 255, 255, 0.5);">Interests :
+        <br/>
+        <label>
+          <input type="checkbox" name="interests" value="1" id="interests_0" />
+          Code</label>
+          <br />
+          <label>
+            <input type="checkbox" name="interests" value="2" id="interests_1" />
+            Swim</label>
+            <br />
+            <label>
+              <input type="checkbox" name="interests" value="3" id="interests_2" /> Reading</label>
+              <br/>
+              <label>
+               <input type="checkbox" name="interests" value="4" id="interests_3" />
+               Watching Movie/Series </label>
+               <br/>
+
+             </p>
+
+             <p class="col-lg-12" ><input name="submit" type="submit" value="Submit" />
+
+              <input name="reset" type="reset" value="Reset" /></p></form>
+              <ul class="pager col-lg-12">
+                <li class="previous"><a href="contactme.html">← Contact Me</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </body>
+        </html>
